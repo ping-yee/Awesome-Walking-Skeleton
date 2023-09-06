@@ -1,0 +1,14 @@
+type Users @goModel(model: "github.com/taimoor99/three-tier-golang/app/entities.Users"){
+    id: ID!
+    email: String!
+    name:      String!
+    password:  String!
+    created_at: Time!
+    updated_at: Time!
+}
+
+input UsersCreateInput @goModel(model: "github.com/taimoor99/three-tier-golang/app/entities.UsersCreateInput"){
+    email:      String!
+    name:       String!
+    password:   String!
+}
