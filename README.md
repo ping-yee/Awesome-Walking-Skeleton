@@ -1,6 +1,9 @@
 # Awesome-Walking-Skeleton
 Various walking skeleton solution (e.g. PHP, Python, Golang).
 
+![image](https://github.com/ping-yee/Awesome-Walking-Skeleton/assets/65348108/a2ee7ccc-5b38-4ddc-af74-51e22baad313)
+
+
 ## What is walking skeleton?
 
 > A "walking skeleton" is an implementation of the thinnest possible slice of real functionality that we can automatically build, deploy, and test end-to-end.
