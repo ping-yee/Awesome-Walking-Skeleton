@@ -1,8 +1,7 @@
 # Awesome-Walking-Skeleton
 Various walking skeleton solution (e.g. PHP, Python, Golang).
 
-![image](https://github.com/ping-yee/Awesome-Walking-Skeleton/assets/65348108/a2ee7ccc-5b38-4ddc-af74-51e22baad313)
-
+![image](https://github.com/ping-yee/Awesome-Walking-Skeleton/assets/65348108/9c69bbf3-08a2-488a-9293-72f00bf5fb3b)
 
 ## What is walking skeleton?
 
