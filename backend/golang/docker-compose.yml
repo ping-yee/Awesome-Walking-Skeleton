@@ -1,24 +1,19 @@
 version: '3'
+
 services:
+  # message-service:
+  #   build: .
+  #   container_name: message-service
+  #   image: the-message
+  #   ports:
+  #     - "8080:8080"
 
-  mongodb:
-    image: mongo
-    container_name: mongodb
-    command: mongod
-    ports:
-      - "27017:27017"
-    volumes:
-      - ../data:/data/db
-
-  three-tier-golang:
-    build: .
-    container_name: go-tuts
-    image: three-tier-golang
-    ports:
-      - "8080:8080"
+  mysql:
+    image: mysql:latest
     environment:
-      MONGODB_URL: 'mongodb'
-      DATABASE_NAME: 'go-tuts'
-      PORT: '8080'
-    links:
-      - mongodb
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3306:3306"
