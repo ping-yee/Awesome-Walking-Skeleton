@@ -6,7 +6,7 @@ on:
       - backend/golang/**
   pull_request:
     paths:
-      - Backend/golang/**
+      - backend/golang/**
 
 jobs:
   build:
@@ -21,13 +21,13 @@ jobs:
           go-version: '1.21'
 
       - name: Env handle
-        working-directory: ./Backend/golang
+        working-directory: ./backend/golang
         run: cp env .env
 
       - name: Build
-        working-directory: ./Backend/golang
+        working-directory: ./backend/golang
         run: go build -v ./...
 
       - name: Test
-        working-directory: ./Backend/golang
+        working-directory: ./backend/golang
         run: go test -v ./...
