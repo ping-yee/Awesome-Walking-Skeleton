@@ -1,15 +1,33 @@
-name: Test
-on: [push, pull_request]
+name: Backend Golang CI
+
+on:
+  push:
+    paths:
+      - backend/golang/**
+  pull_request:
+    paths:
+      - backend/golang/**
+
 jobs:
-  test:
-    strategy:
-      matrix:
-        go-version: [1.20.x, 1.21.x]
-        os: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+  build:
+
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-go@v4
-      with:
-        go-version: ${{ matrix.go-version }}
-    - run: go test ./...
+      - uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+
+      - name: Env handle
+        working-directory: ./backend/golang
+        run: cp env .env
+
+      - name: Build
+        working-directory: ./backend/golang
+        run: go build -v ./...
+
+      - name: Test
+        working-directory: ./backend/golang
+        run: go test -v ./...

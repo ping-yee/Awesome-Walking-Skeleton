@@ -1,4 +1,0 @@
-type Query {
-    user(id: String!): Users!
-    users(limit: Int!, offset: Int!): [Users!]!
-}
