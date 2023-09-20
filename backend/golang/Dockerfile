@@ -1,7 +1,7 @@
-FROM golang:1.15-alpine as build-env
+FROM golang:latest as build-env
 # All these steps will be cached
-RUN mkdir -p /github.com/taimoor99/three-tier-golang
-WORKDIR /github.com/taimoor99/three-tier-golang
+RUN mkdir -p /github.com/ping-yee/Awesome-Walking-Skeleton
+WORKDIR /github.com/ping-yee/Awesome-Walking-Skeleton
 COPY go.mod .
 # <- COPY go.mod and go.sum files to the workspace
 COPY go.sum .
@@ -12,11 +12,11 @@ RUN go mod download
 COPY . .
 
 # Build the binary
-RUN go build -o three-tier-golang ./cmd/three-tier-golang
+RUN go build -o the-message ./cmd/app
 
 # This container exposes port 8080 to the outside world
 EXPOSE 8080
 
 # Run the binary program produced by `go install`
-CMD ["./three-tier-golang"]
+CMD ["./the-message"]
 

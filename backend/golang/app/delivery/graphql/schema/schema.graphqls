@@ -1,8 +1,0 @@
-# GraphQL schema example
-#
-# https://gqlgen.com/getting-started/
-
-schema {
-    query: Query
-    mutation: Mutation
-}
