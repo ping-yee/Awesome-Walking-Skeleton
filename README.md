@@ -3,6 +3,17 @@ Various walking skeleton solution (e.g. PHP, Python, Golang).
 
 ![image](https://github.com/ping-yee/Awesome-Walking-Skeleton/assets/65348108/9c69bbf3-08a2-488a-9293-72f00bf5fb3b)
 
+## Solution List
+
+This is the current progress list for this project and **contribution is welcome!**
+
+| Language | Framework | Database          | Completed           | Contributor         |
+|----------|-----------|-------------------|---------------------|--------------------|
+| Golang   | Gin       | MySQL             | :white_check_mark:  | [Ping-yee](https://github.com/ping-yee) |
+| PHP      | Laravel   | MySQL             | :construction:      | [Ping-yee](https://github.com/ping-yee) |
+| Python   | Flask     | MySQL             | :construction:      | [Ping-yee](https://github.com/ping-yee) |
+| Python   | Django    | MySQL             | :x:                 | :x: |
+
 ## What Is Walking Skeleton?
 
 > A "walking skeleton" is an implementation of the thinnest possible slice of real functionality that we can automatically build, deploy, and test end-to-end.
@@ -38,3 +49,11 @@ You should choose an actual product feature, and the smaller it is, the better â
 5. **Promotion of Collaboration and Communication**
    - The Walking Skeleton provides a common foundation, fostering collaboration and communication within and outside the development team.
    - By showcasing the core components and functionality of the system, team members can better understand the overall system structure and engage in discussions and decision-making based on this foundation.
+
+## Contributing List
+
+<a href="https://github.com/ping-yee/Awesome-Walking-Skeleton/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ping-yee/Awesome-Walking-Skeleton" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
