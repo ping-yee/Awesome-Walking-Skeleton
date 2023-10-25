@@ -5,7 +5,7 @@ Various walking skeleton solution (e.g. PHP, Python, Golang).
 
 ## Solution List
 
-This is the current progress list for this project and **contribution is welcome!**
+This is the current progress list for this project and **contribution is welcome!**, please reference [Contributing](https://github.com/ping-yee/Awesome-Walking-Skeleton/edit/main/README.md#contributing).
 
 | Language | Framework | Database          | Completed           | Contributor         |
 |----------|-----------|-------------------|---------------------|--------------------|
@@ -50,7 +50,42 @@ You should choose an actual product feature, and the smaller it is, the better �
    - The Walking Skeleton provides a common foundation, fostering collaboration and communication within and outside the development team.
    - By showcasing the core components and functionality of the system, team members can better understand the overall system structure and engage in discussions and decision-making based on this foundation.
 
-## Contributing List
+## Contributing
+
+We warmly welcome contributions in various programming languages and frameworks. This enables a wide range of developers to use our library for rapid project construction. 🚀
+
+### Contribution Guidelines
+
+When you decide to contribute, please make sure your solution is following directory structure and includes the necessary components outlined below. 🗂️
+
+### Directory Structure
+
+For instance, if your solution targets backend development, it should be located within the `Backend` directory. Inside the folder for your chosen programming language, create new subfolders with the names of the framework and the database you are using. 🛠️
+
+```
+Backend/
+├── PHP/
+│ └── Laravel+MySQL/
+│ ├── Codeigniter4+MySQL
+│ └── ...
+├── Python/
+│ └── flask+MySQL/
+├── ...
+└── ...
+```
+
+### Required Components 
+
+Your contribution should meet the following criteria:
+
+1. Implement minimal business logic.
+2. Include Unit Tests.
+3. Incorporate End-to-End Tests.
+4. Set up a Github Actions CI environment that successfully pass all the tests.
+
+### Contributors List
+
+We extend our heartfelt thanks to all the people who have contributed to this project. Below is a list of contributors:
 
 <a href="https://github.com/ping-yee/Awesome-Walking-Skeleton/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ping-yee/Awesome-Walking-Skeleton" />
