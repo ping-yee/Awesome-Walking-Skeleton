@@ -1,0 +1,37 @@
+name: Backend PHP CI
+
+on:
+  push:
+    paths:
+      - backend/php/**
+  pull_request:
+    paths:
+      - backend/php/**
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Copy env file
+        working-directory: ./backend/php
+        run: cp env .env
+
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        working-directory: ./backend/php
+        with:
+            command: composer install
+
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@master
+        working-directory: ./backend/php
+        env:
+          TEST_NAME: Scarlett
+        with:
+          version: 9.6
+          bootstrap: vendor/autoload.php
+          configuration: test/phpunit.xml
+          args: --coverage-text
